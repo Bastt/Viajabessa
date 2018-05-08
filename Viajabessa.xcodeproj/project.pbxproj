@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0DC09F9BD55B3CF219FED421 /* Pods_Viajabessa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1601F954ABDD7D3F83E1047D /* Pods_Viajabessa.framework */; };
+		3168055A20A21A7C004D0E22 /* ServiceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168055920A21A7C004D0E22 /* ServiceURL.swift */; };
+		3168055F20A21D13004D0E22 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168055E20A21D13004D0E22 /* ServiceManager.swift */; };
+		3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056120A21D36004D0E22 /* ServiceManagerProtocol.swift */; };
+		3168056520A21D56004D0E22 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056420A21D56004D0E22 /* ServiceError.swift */; };
+		3168056720A22084004D0E22 /* PacksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056620A22084004D0E22 /* PacksService.swift */; };
+		31C9E93120A212AE00F4019F /* Packs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C9E93020A212AE00F4019F /* Packs.swift */; };
+		31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C9E93220A2163A00F4019F /* TravelPackageModel.swift */; };
 		9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1220A1156C00514B1B /* AppDelegate.swift */; };
 		9FFFEC1520A1156C00514B1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1420A1156C00514B1B /* ViewController.swift */; };
 		9FFFEC1820A1156C00514B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1620A1156C00514B1B /* Main.storyboard */; };
@@ -18,6 +25,13 @@
 /* Begin PBXFileReference section */
 		109BE4CA68BB6AAA96148E20 /* Pods-Viajabessa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viajabessa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viajabessa/Pods-Viajabessa.release.xcconfig"; sourceTree = "<group>"; };
 		1601F954ABDD7D3F83E1047D /* Pods_Viajabessa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viajabessa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3168055920A21A7C004D0E22 /* ServiceURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceURL.swift; sourceTree = "<group>"; };
+		3168055E20A21D13004D0E22 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		3168056120A21D36004D0E22 /* ServiceManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerProtocol.swift; sourceTree = "<group>"; };
+		3168056420A21D56004D0E22 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		3168056620A22084004D0E22 /* PacksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksService.swift; sourceTree = "<group>"; };
+		31C9E93020A212AE00F4019F /* Packs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packs.swift; sourceTree = "<group>"; };
+		31C9E93220A2163A00F4019F /* TravelPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageModel.swift; sourceTree = "<group>"; };
 		9FFFEC0F20A1156C00514B1B /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFFEC1220A1156C00514B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFFEC1420A1156C00514B1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +54,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3168055B20A21CCB004D0E22 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3168055E20A21D13004D0E22 /* ServiceManager.swift */,
+				3168056120A21D36004D0E22 /* ServiceManagerProtocol.swift */,
+				3168056420A21D56004D0E22 /* ServiceError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3168055C20A21CDE004D0E22 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3168055B20A21CCB004D0E22 /* Service */,
+			);
+			name = Helpers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		31C9E92E20A20F4500F4019F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				31C9E92F20A2123D00F4019F /* Models */,
+				3168056620A22084004D0E22 /* PacksService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		31C9E92F20A2123D00F4019F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31C9E93020A212AE00F4019F /* Packs.swift */,
+				31C9E93220A2163A00F4019F /* TravelPackageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9D4637F68A59C650D01425C2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				9FFFEC2820A1162500514B1B /* Features */,
-				9FFFEC2720A1161900514B1B /* Helpers */,
+				3168055C20A21CDE004D0E22 /* Helpers */,
 				9FFFEC2620A1160F00514B1B /* Resources */,
-				9FFFEC2520A115D400514B1B /* Services */,
+				31C9E92E20A20F4500F4019F /* Services */,
 				9FFFEC2420A115CD00514B1B /* Storyboards */,
 			);
 			path = Viajabessa;
@@ -88,28 +139,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		9FFFEC2520A115D400514B1B /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		9FFFEC2620A1160F00514B1B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9FFFEC1E20A1156C00514B1B /* Info.plist */,
 				9FFFEC1220A1156C00514B1B /* AppDelegate.swift */,
 				9FFFEC1920A1156C00514B1B /* Assets.xcassets */,
+				9FFFEC1E20A1156C00514B1B /* Info.plist */,
+				3168055920A21A7C004D0E22 /* ServiceURL.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		9FFFEC2720A1161900514B1B /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9FFFEC2820A1162500514B1B /* Features */ = {
@@ -140,7 +178,6 @@
 				9FFFEC0C20A1156C00514B1B /* Frameworks */,
 				9FFFEC0D20A1156C00514B1B /* Resources */,
 				FC47B777B98C0C0CEB6D7C79 /* [CP] Embed Pods Frameworks */,
-				96D5425FA70EECD537DEF5BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,21 +254,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96D5425FA70EECD537DEF5BD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FC47B777B98C0C0CEB6D7C79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,8 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3168056520A21D56004D0E22 /* ServiceError.swift in Sources */,
 				9FFFEC1520A1156C00514B1B /* ViewController.swift in Sources */,
+				3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */,
+				31C9E93120A212AE00F4019F /* Packs.swift in Sources */,
+				31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */,
+				3168055A20A21A7C004D0E22 /* ServiceURL.swift in Sources */,
 				9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */,
+				3168056720A22084004D0E22 /* PacksService.swift in Sources */,
+				3168055F20A21D13004D0E22 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
