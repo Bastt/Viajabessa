@@ -27,7 +27,7 @@ struct TravelPackageModel : Codable {
         case title
         case location = "localizacao"
         case price
-        case image
+        case image = "thumbnail"
         case person
         case daily = "diarias"
         case documents = "documentos"

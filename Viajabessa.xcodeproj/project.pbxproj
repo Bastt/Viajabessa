@@ -13,10 +13,15 @@
 		3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056120A21D36004D0E22 /* ServiceManagerProtocol.swift */; };
 		3168056520A21D56004D0E22 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056420A21D56004D0E22 /* ServiceError.swift */; };
 		3168056720A22084004D0E22 /* PacksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056620A22084004D0E22 /* PacksService.swift */; };
+		3168056C20A22C51004D0E22 /* TravelPackagesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056B20A22C51004D0E22 /* TravelPackagesListPresenter.swift */; };
+		3168056E20A22C96004D0E22 /* TravelPackagesListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056D20A22C96004D0E22 /* TravelPackagesListProtocol.swift */; };
+		3168057320A23CD3004D0E22 /* TravelPackagesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168057120A23CD3004D0E22 /* TravelPackagesListController.swift */; };
 		31C9E93120A212AE00F4019F /* Packs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C9E93020A212AE00F4019F /* Packs.swift */; };
 		31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C9E93220A2163A00F4019F /* TravelPackageModel.swift */; };
+		31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */; };
+		31FBF43620A3749500D15D79 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBF43520A3749500D15D79 /* NSObject.swift */; };
+		31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */; };
 		9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1220A1156C00514B1B /* AppDelegate.swift */; };
-		9FFFEC1520A1156C00514B1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1420A1156C00514B1B /* ViewController.swift */; };
 		9FFFEC1820A1156C00514B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1620A1156C00514B1B /* Main.storyboard */; };
 		9FFFEC1A20A1156C00514B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1920A1156C00514B1B /* Assets.xcassets */; };
 		9FFFEC1D20A1156C00514B1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1B20A1156C00514B1B /* LaunchScreen.storyboard */; };
@@ -30,11 +35,16 @@
 		3168056120A21D36004D0E22 /* ServiceManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerProtocol.swift; sourceTree = "<group>"; };
 		3168056420A21D56004D0E22 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		3168056620A22084004D0E22 /* PacksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksService.swift; sourceTree = "<group>"; };
+		3168056B20A22C51004D0E22 /* TravelPackagesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesListPresenter.swift; sourceTree = "<group>"; };
+		3168056D20A22C96004D0E22 /* TravelPackagesListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesListProtocol.swift; sourceTree = "<group>"; };
+		3168057120A23CD3004D0E22 /* TravelPackagesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesListController.swift; sourceTree = "<group>"; };
 		31C9E93020A212AE00F4019F /* Packs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packs.swift; sourceTree = "<group>"; };
 		31C9E93220A2163A00F4019F /* TravelPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageModel.swift; sourceTree = "<group>"; };
+		31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageCollectionViewCell.swift; sourceTree = "<group>"; };
+		31FBF43520A3749500D15D79 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesViewCell.swift; sourceTree = "<group>"; };
 		9FFFEC0F20A1156C00514B1B /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFFEC1220A1156C00514B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FFFEC1420A1156C00514B1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FFFEC1720A1156C00514B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FFFEC1920A1156C00514B1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FFFEC1C20A1156C00514B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,10 +77,38 @@
 		3168055C20A21CDE004D0E22 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				31FBF43420A3746F00D15D79 /* Extensions */,
 				3168055B20A21CCB004D0E22 /* Service */,
 			);
 			name = Helpers;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3168056820A22B6B004D0E22 /* TravelPackagesList */ = {
+			isa = PBXGroup;
+			children = (
+				3168056920A22B95004D0E22 /* View */,
+				3168056A20A22BA3004D0E22 /* Presenter */,
+			);
+			path = TravelPackagesList;
+			sourceTree = "<group>";
+		};
+		3168056920A22B95004D0E22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31FBF43720A374FA00D15D79 /* Cell */,
+				3168057120A23CD3004D0E22 /* TravelPackagesListController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3168056A20A22BA3004D0E22 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3168056B20A22C51004D0E22 /* TravelPackagesListPresenter.swift */,
+				3168056D20A22C96004D0E22 /* TravelPackagesListProtocol.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		31C9E92E20A20F4500F4019F /* Services */ = {
@@ -89,6 +127,23 @@
 				31C9E93220A2163A00F4019F /* TravelPackageModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		31FBF43420A3746F00D15D79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31FBF43520A3749500D15D79 /* NSObject.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		31FBF43720A374FA00D15D79 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */,
+				31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9D4637F68A59C650D01425C2 /* Pods */ = {
@@ -153,7 +208,7 @@
 		9FFFEC2820A1162500514B1B /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				9FFFEC1420A1156C00514B1B /* ViewController.swift */,
+				3168056820A22B6B004D0E22 /* TravelPackagesList */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -263,11 +318,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,13 +339,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3168056520A21D56004D0E22 /* ServiceError.swift in Sources */,
-				9FFFEC1520A1156C00514B1B /* ViewController.swift in Sources */,
 				3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */,
 				31C9E93120A212AE00F4019F /* Packs.swift in Sources */,
+				31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */,
 				31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */,
 				3168055A20A21A7C004D0E22 /* ServiceURL.swift in Sources */,
 				9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */,
+				3168056C20A22C51004D0E22 /* TravelPackagesListPresenter.swift in Sources */,
+				3168056E20A22C96004D0E22 /* TravelPackagesListProtocol.swift in Sources */,
 				3168056720A22084004D0E22 /* PacksService.swift in Sources */,
+				31FBF43620A3749500D15D79 /* NSObject.swift in Sources */,
+				31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */,
+				3168057320A23CD3004D0E22 /* TravelPackagesListController.swift in Sources */,
 				3168055F20A21D13004D0E22 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

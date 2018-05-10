@@ -7,6 +7,7 @@ target 'Viajabessa' do
 
   	pod 'Alamofire', '~> 4.4'
 	pod 'AlamofireImage', '~> 3.3'
+	pod 'SVProgressHUD'
 
   # Pods for Viajabessa
 
