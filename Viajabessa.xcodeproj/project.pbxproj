@@ -21,6 +21,9 @@
 		31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */; };
 		31FBF43620A3749500D15D79 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBF43520A3749500D15D79 /* NSObject.swift */; };
 		31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */; };
+		9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */; };
+		9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */; };
+		9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */; };
 		9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1220A1156C00514B1B /* AppDelegate.swift */; };
 		9FFFEC1820A1156C00514B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1620A1156C00514B1B /* Main.storyboard */; };
 		9FFFEC1A20A1156C00514B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1920A1156C00514B1B /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 		31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageCollectionViewCell.swift; sourceTree = "<group>"; };
 		31FBF43520A3749500D15D79 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesViewCell.swift; sourceTree = "<group>"; };
+		9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailController.swift; sourceTree = "<group>"; };
+		9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailPresenter.swift; sourceTree = "<group>"; };
+		9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailProtocol.swift; sourceTree = "<group>"; };
 		9FFFEC0F20A1156C00514B1B /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFFEC1220A1156C00514B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFFEC1720A1156C00514B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +161,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9FE9671020A7742F00A731C4 /* TravelPackagesDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9671120A7744C00A731C4 /* View */,
+				9FE9671220A7745700A731C4 /* Presenter */,
+			);
+			path = TravelPackagesDetail;
+			sourceTree = "<group>";
+		};
+		9FE9671120A7744C00A731C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FE9671220A7745700A731C4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */,
+				9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		9FFFEC0620A1156C00514B1B = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				3168056820A22B6B004D0E22 /* TravelPackagesList */,
+				9FE9671020A7742F00A731C4 /* TravelPackagesDetail */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -233,6 +266,7 @@
 				9FFFEC0C20A1156C00514B1B /* Frameworks */,
 				9FFFEC0D20A1156C00514B1B /* Resources */,
 				FC47B777B98C0C0CEB6D7C79 /* [CP] Embed Pods Frameworks */,
+				9C8B4A970F3741E99216A776 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +343,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9C8B4A970F3741E99216A776 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FC47B777B98C0C0CEB6D7C79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,8 +390,11 @@
 				3168056520A21D56004D0E22 /* ServiceError.swift in Sources */,
 				3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */,
 				31C9E93120A212AE00F4019F /* Packs.swift in Sources */,
+				9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */,
 				31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */,
 				31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */,
+				9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */,
+				9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */,
 				3168055A20A21A7C004D0E22 /* ServiceURL.swift in Sources */,
 				9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */,
 				3168056C20A22C51004D0E22 /* TravelPackagesListPresenter.swift in Sources */,

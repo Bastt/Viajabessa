@@ -13,6 +13,7 @@ class TravelPackagesListController: UITableViewController {
     
     fileprivate var presenter: TravelPackagesListPresenter!
     fileprivate var sectionHeight = CGFloat(40)
+    fileprivate var itemSelect : (TravelPackageModel)?
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,9 +93,31 @@ extension TravelPackagesListController: TravelPackagesListProtocol {
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+// MARK: - SelectingCollection
+
 extension TravelPackagesListController: SelectingCollection {
     
     func collectionSelected(travelPackage: TravelPackageModel) {
-        print("Clicou na cell")
+        let productSelected = "travelPackagesDetails"
+        itemSelect = (travelPackage)
+        performSegue(withIdentifier: productSelected, sender: nil)
+    }
+    
+    // MARK: - Navigation
+
+    override internal func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "travelPackagesDetails":
+                if let travelPackageDetails = segue.destination as? TravelPackagesDetailController {
+                    guard let select = itemSelect else {
+                        return print("no itemSelect")
+                    }
+                    travelPackageDetails.travelPackage = select
+                }
+            default: print("Identifier \(identifier) isn't a valid segue")
+            }
+        }
     }
 }
