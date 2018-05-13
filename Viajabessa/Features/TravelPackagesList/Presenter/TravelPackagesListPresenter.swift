@@ -42,6 +42,11 @@ extension TravelPackagesListPresenter {
             self.requestError(errorDescription: error)
         }
     }
+    
+    func setupInitializerView() {
+        self.view.navigationItem()
+        self.view.tabBarItem()
+    }
 }
 
 // MARK: - Private methods

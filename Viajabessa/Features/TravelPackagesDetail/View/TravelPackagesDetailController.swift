@@ -52,6 +52,7 @@ extension TravelPackagesDetailController {
 // MARK: - ViewProtocol
 
 extension TravelPackagesDetailController: TravelPackagesDetailProtocol {
+
     func setup() {
         guard let travelPackage = self.travelPackage else { return  }
         self.travelPackageName.text = travelPackage.title
@@ -61,6 +62,10 @@ extension TravelPackagesDetailController: TravelPackagesDetailProtocol {
         if let imageString = travelPackage.image, let imageURL = URL(string: imageString) {
             travelPackageImage!.af_setImage(withURL: imageURL)
         }
+    }
+    
+    func dismiss() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func setAttributesView() {

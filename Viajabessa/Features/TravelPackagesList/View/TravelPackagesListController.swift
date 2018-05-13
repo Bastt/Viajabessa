@@ -17,9 +17,10 @@ class TravelPackagesListController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         self.presenter = TravelPackagesListPresenter(view: self)
         self.presenter.loadTravelPackages()
+        self.presenter.setupInitializerView()
     }
 }
 
@@ -68,6 +69,19 @@ extension TravelPackagesListController {
 // MARK: - ViewProtocol
 
 extension TravelPackagesListController: TravelPackagesListProtocol {
+    
+    func navigationItem() {
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
+        self.navigationController?.navigationBar.barTintColor = UIColor.blue
+    }
+    
+    func tabBarItem() {
+        tabBarItem = UITabBarItem(title: "destaques", image: UIImage(named: "star"), tag: 0)
+        self.tabBarController?.tabBarItem.title = "destaques"
+        self.tabBarController?.tabBar.backgroundColor = UIColor.white
+        self.tabBarController?.tabBar.tintColor = UIColor.blue
+        self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.black
+    }
     
     func startLoading() {
         SVProgressHUD.setDefaultStyle(.custom)

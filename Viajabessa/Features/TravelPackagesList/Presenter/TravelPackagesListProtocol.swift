@@ -10,6 +10,8 @@ import Foundation
 
 protocol TravelPackagesListProtocol: class {
 
+    func navigationItem()
+    func tabBarItem()
     func startLoading()
     func stopLoading()
     func reloadTableView()

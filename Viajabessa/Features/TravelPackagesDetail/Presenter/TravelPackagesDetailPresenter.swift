@@ -40,5 +40,8 @@ extension TravelPackagesDetailPresenter {
             database.image = travelPackages.image!
             realm.add(database)
         }
+        Alert.show(delegate: self, title: "Pacote adicionado", message: "O Pacote de viagem foi com adicionado no carrinho") { _ in
+            self.view.dismiss()
+        }
     }
 }
