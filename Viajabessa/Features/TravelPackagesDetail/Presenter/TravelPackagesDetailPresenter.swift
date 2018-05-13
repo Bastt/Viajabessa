@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ronilson Batista. All rights reserved.
 //
 
-
 import UIKit
+import RealmSwift
 
 final class TravelPackagesDetailPresenter {
     
@@ -20,8 +20,25 @@ final class TravelPackagesDetailPresenter {
 
 // MARK: - Public methods
 extension TravelPackagesDetailPresenter {
+    
     func setupInitializerView() {
         self.view.setup()
         self.view.setAttributesView()
+    }
+    
+    func savingTravelPackagesToCart(travelPackage: TravelPackageModel?) {
+        
+        let realm = try! Realm()
+        try! realm.write {
+            let database = TravelPackageDatabase()
+            guard let travelPackages = travelPackage else {
+                return
+            }
+            database.name = travelPackages.title!
+            database.price = travelPackages.price!
+            database.travelPackageDescription = travelPackages.documents!
+            database.image = travelPackages.image!
+            realm.add(database)
+        }
     }
 }

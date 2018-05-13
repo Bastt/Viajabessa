@@ -45,7 +45,7 @@ extension TravelPackagesDetailController {
 extension TravelPackagesDetailController {
     
     @IBAction func buttonTouched() {
-        print("vamos salvar sua compra no cart.")
+        self.presenter.savingTravelPackagesToCart(travelPackage: self.travelPackage)
     }
 }
 
