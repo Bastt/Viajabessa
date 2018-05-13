@@ -18,7 +18,20 @@ class TravelPackagesPaymentHistoryController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
+        self.navigationController?.navigationBar.barTintColor = AppControl.shared.colorPrimary
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        tabBarItem = UITabBarItem(title: "histórico", image: UIImage(named: "shopping-icon"), tag: 1)
+        self.tabBarController?.tabBar.backgroundColor = UIColor.white
+        self.tabBarController?.tabBar.tintColor =  AppControl.shared.colorPrimary
+        self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.black
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,7 +42,7 @@ class TravelPackagesPaymentHistoryController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

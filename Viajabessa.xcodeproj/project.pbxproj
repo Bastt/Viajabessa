@@ -26,9 +26,6 @@
 		9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */; };
 		9FE9671C20A7B87C00A731C4 /* TravelPackageDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671B20A7B87C00A731C4 /* TravelPackageDatabase.swift */; };
 		9FE9672020A7BFB100A731C4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671F20A7BFB100A731C4 /* Alert.swift */; };
-		9FE9672520A7C12900A731C4 /* TravelPackagesCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9672420A7C12900A731C4 /* TravelPackagesCartPresenter.swift */; };
-		9FE9672720A7C14100A731C4 /* TravelPackagesCartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9672620A7C14100A731C4 /* TravelPackagesCartProtocol.swift */; };
-		9FE9672920A7C17B00A731C4 /* TravelPackagesCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9672820A7C17B00A731C4 /* TravelPackagesCartController.swift */; };
 		9FE9673120A7CD5900A731C4 /* TravelPackagesPurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */; };
 		9FE9673320A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */; };
 		9FE9673520A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */; };
@@ -37,6 +34,9 @@
 		9FE9673B20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */; };
 		9FE9673D20A7CFA800A731C4 /* AppControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673C20A7CFA800A731C4 /* AppControl.swift */; };
 		9FE9673F20A7D01600A731C4 /* Coloring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673E20A7D01600A731C4 /* Coloring.swift */; };
+		9FE9674320A7FBC500A731C4 /* WithoutViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9674120A7FBC500A731C4 /* WithoutViewCell.swift */; };
+		9FE9674420A7FBC500A731C4 /* WithoutViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FE9674220A7FBC500A731C4 /* WithoutViewCell.xib */; };
+		9FE9674B20A8032100A731C4 /* ButtonViewParameterization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9674A20A8032100A731C4 /* ButtonViewParameterization.swift */; };
 		9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1220A1156C00514B1B /* AppDelegate.swift */; };
 		9FFFEC1820A1156C00514B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1620A1156C00514B1B /* Main.storyboard */; };
 		9FFFEC1A20A1156C00514B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1920A1156C00514B1B /* Assets.xcassets */; };
@@ -64,9 +64,6 @@
 		9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailProtocol.swift; sourceTree = "<group>"; };
 		9FE9671B20A7B87C00A731C4 /* TravelPackageDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageDatabase.swift; sourceTree = "<group>"; };
 		9FE9671F20A7BFB100A731C4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		9FE9672420A7C12900A731C4 /* TravelPackagesCartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesCartPresenter.swift; sourceTree = "<group>"; };
-		9FE9672620A7C14100A731C4 /* TravelPackagesCartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesCartProtocol.swift; sourceTree = "<group>"; };
-		9FE9672820A7C17B00A731C4 /* TravelPackagesCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesCartController.swift; sourceTree = "<group>"; };
 		9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchaseController.swift; sourceTree = "<group>"; };
 		9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchasePresenter.swift; sourceTree = "<group>"; };
 		9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchaseProtocol.swift; sourceTree = "<group>"; };
@@ -75,6 +72,9 @@
 		9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryControllerProtocol.swift; sourceTree = "<group>"; };
 		9FE9673C20A7CFA800A731C4 /* AppControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppControl.swift; sourceTree = "<group>"; };
 		9FE9673E20A7D01600A731C4 /* Coloring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coloring.swift; sourceTree = "<group>"; };
+		9FE9674120A7FBC500A731C4 /* WithoutViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutViewCell.swift; sourceTree = "<group>"; };
+		9FE9674220A7FBC500A731C4 /* WithoutViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WithoutViewCell.xib; sourceTree = "<group>"; };
+		9FE9674A20A8032100A731C4 /* ButtonViewParameterization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewParameterization.swift; sourceTree = "<group>"; };
 		9FFFEC0F20A1156C00514B1B /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFFEC1220A1156C00514B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFFEC1720A1156C00514B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,8 +156,9 @@
 		31C9E92F20A2123D00F4019F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9FE9671A20A7B85700A731C4 /* API */,
-				9FE9671920A7B84E00A731C4 /* DataBase */,
+				9FE9671920A7B84E00A731C4 /* Database */,
+				31C9E93020A212AE00F4019F /* Packs.swift */,
+				31C9E93220A2163A00F4019F /* TravelPackageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +168,7 @@
 			children = (
 				31FBF43520A3749500D15D79 /* NSObject.swift */,
 				9FE9673E20A7D01600A731C4 /* Coloring.swift */,
+				9FE9674A20A8032100A731C4 /* ButtonViewParameterization.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,21 +217,12 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		9FE9671920A7B84E00A731C4 /* DataBase */ = {
+		9FE9671920A7B84E00A731C4 /* Database */ = {
 			isa = PBXGroup;
 			children = (
 				9FE9671B20A7B87C00A731C4 /* TravelPackageDatabase.swift */,
 			);
-			path = DataBase;
-			sourceTree = "<group>";
-		};
-		9FE9671A20A7B85700A731C4 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				31C9E93020A212AE00F4019F /* Packs.swift */,
-				31C9E93220A2163A00F4019F /* TravelPackageModel.swift */,
-			);
-			path = API;
+			path = Database;
 			sourceTree = "<group>";
 		};
 		9FE9671D20A7BF9200A731C4 /* Alert */ = {
@@ -238,32 +231,6 @@
 				9FE9671F20A7BFB100A731C4 /* Alert.swift */,
 			);
 			path = Alert;
-			sourceTree = "<group>";
-		};
-		9FE9672120A7C0E400A731C4 /* TravelPackagesCart */ = {
-			isa = PBXGroup;
-			children = (
-				9FE9672220A7C0F800A731C4 /* View */,
-				9FE9672320A7C0FF00A731C4 /* Presenter */,
-			);
-			path = TravelPackagesCart;
-			sourceTree = "<group>";
-		};
-		9FE9672220A7C0F800A731C4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9FE9672820A7C17B00A731C4 /* TravelPackagesCartController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		9FE9672320A7C0FF00A731C4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				9FE9672420A7C12900A731C4 /* TravelPackagesCartPresenter.swift */,
-				9FE9672620A7C14100A731C4 /* TravelPackagesCartProtocol.swift */,
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		9FE9672A20A7CCB100A731C4 /* TravelPackagesPurchase */ = {
@@ -316,6 +283,15 @@
 				9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9FE9674020A7FBA300A731C4 /* WithoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9674120A7FBC500A731C4 /* WithoutViewCell.swift */,
+				9FE9674220A7FBC500A731C4 /* WithoutViewCell.xib */,
+			);
+			path = WithoutCell;
 			sourceTree = "<group>";
 		};
 		9FFFEC0620A1156C00514B1B = {
@@ -372,9 +348,9 @@
 		9FFFEC2820A1162500514B1B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				9FE9674020A7FBA300A731C4 /* WithoutCell */,
 				3168056820A22B6B004D0E22 /* TravelPackagesList */,
 				9FE9671020A7742F00A731C4 /* TravelPackagesDetail */,
-				9FE9672120A7C0E400A731C4 /* TravelPackagesCart */,
 				9FE9672A20A7CCB100A731C4 /* TravelPackagesPurchase */,
 				9FE9672B20A7CCDA00A731C4 /* TravelPackagesPaymentHistory */,
 			);
@@ -454,6 +430,7 @@
 				9FFFEC1D20A1156C00514B1B /* LaunchScreen.storyboard in Resources */,
 				9FFFEC1A20A1156C00514B1B /* Assets.xcassets in Resources */,
 				9FFFEC1820A1156C00514B1B /* Main.storyboard in Resources */,
+				9FE9674420A7FBC500A731C4 /* WithoutViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,26 +513,25 @@
 				9FE9671C20A7B87C00A731C4 /* TravelPackageDatabase.swift in Sources */,
 				9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */,
 				9FE9672020A7BFB100A731C4 /* Alert.swift in Sources */,
-				9FE9672920A7C17B00A731C4 /* TravelPackagesCartController.swift in Sources */,
 				9FE9673B20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift in Sources */,
 				9FE9673320A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift in Sources */,
 				31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */,
 				31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */,
 				9FE9673720A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift in Sources */,
 				9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */,
-				9FE9672720A7C14100A731C4 /* TravelPackagesCartProtocol.swift in Sources */,
 				9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */,
 				3168055A20A21A7C004D0E22 /* ServiceURL.swift in Sources */,
 				9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */,
 				3168056C20A22C51004D0E22 /* TravelPackagesListPresenter.swift in Sources */,
-				9FE9672520A7C12900A731C4 /* TravelPackagesCartPresenter.swift in Sources */,
 				3168056E20A22C96004D0E22 /* TravelPackagesListProtocol.swift in Sources */,
 				3168056720A22084004D0E22 /* PacksService.swift in Sources */,
 				31FBF43620A3749500D15D79 /* NSObject.swift in Sources */,
 				31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */,
 				3168057320A23CD3004D0E22 /* TravelPackagesListController.swift in Sources */,
+				9FE9674B20A8032100A731C4 /* ButtonViewParameterization.swift in Sources */,
 				9FE9673D20A7CFA800A731C4 /* AppControl.swift in Sources */,
 				3168055F20A21D13004D0E22 /* ServiceManager.swift in Sources */,
+				9FE9674320A7FBC500A731C4 /* WithoutViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

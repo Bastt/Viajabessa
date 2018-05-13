@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WithoutViewCell" rowHeight="426" id="Aw6-ab-n1k" customClass="WithoutViewCell" customModule="DesafioBRQ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="426"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aw6-ab-n1k" id="FFn-Sy-yIU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="425.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0G-8V-R0Q">
+                        <rect key="frame" x="163.5" y="79" width="48.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="MQG-ef-cWj">
+                        <rect key="frame" x="180" y="121" width="16" height="184"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MQG-ef-cWj" firstAttribute="centerX" secondItem="FFn-Sy-yIU" secondAttribute="centerX" id="5OU-Jr-BgK"/>
+                    <constraint firstItem="MQG-ef-cWj" firstAttribute="centerX" secondItem="S0G-8V-R0Q" secondAttribute="centerX" id="MVK-aj-U6U"/>
+                    <constraint firstAttribute="bottom" secondItem="MQG-ef-cWj" secondAttribute="bottom" constant="121" id="jCA-CR-ZEU"/>
+                    <constraint firstItem="MQG-ef-cWj" firstAttribute="top" secondItem="S0G-8V-R0Q" secondAttribute="bottom" constant="19" id="q4e-sb-mbu"/>
+                    <constraint firstItem="MQG-ef-cWj" firstAttribute="centerY" secondItem="FFn-Sy-yIU" secondAttribute="centerY" id="wYD-iQ-D56"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="imageWithout" destination="MQG-ef-cWj" id="E0d-Fx-ej4"/>
+                <outlet property="txtWithout" destination="S0G-8V-R0Q" id="lXl-b1-LbQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sad" width="16" height="16"/>
+    </resources>
+</document>

@@ -37,17 +37,33 @@ extension TravelPackagesDetailController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
-    
 }
+    
+    
 
-// MARK: - ActionMethods
+// MARK: - UIStoryboardSegue
 
 extension TravelPackagesDetailController {
-    
-    @IBAction func buttonTouched() {
-        self.presenter.savingTravelPackagesToCart(travelPackage: self.travelPackage)
+    override internal func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "travelPackagesPurchase":
+                if let travelPackagesPurchase = segue.destination as? TravelPackagesPurchaseController {
+                    travelPackagesPurchase.travelPackageModel = travelPackage
+                }
+        
+            default: print("Identifier \(identifier) isn't a valid segue")
+            }
+        }
     }
 }
+
+//extension TravelPackagesDetailController {
+//
+//    @IBAction func buttonTouched() {
+//        self.presenter.savingTravelPackagesToCart(travelPackage: self.travelPackage)
+//    }
+//}
 
 // MARK: - ViewProtocol
 
