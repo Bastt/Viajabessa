@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+final class TravelPackagesPaymentHistoryControllerPresenter {
+    
+    fileprivate unowned let view: TravelPackagesPaymentHistoryControllerProtocol
+    
+    init(view: TravelPackagesPaymentHistoryControllerProtocol) {
+        self.view = view
+        self.setupInitializerView()
+    }
+}
+
+// MARK: - Public methods
+
+extension TravelPackagesPaymentHistoryControllerPresenter {
+    
+    func setupInitializerView() {
+        self.view.updateData()
+        self.view.addRightBarButtonItems()
+    }
+}

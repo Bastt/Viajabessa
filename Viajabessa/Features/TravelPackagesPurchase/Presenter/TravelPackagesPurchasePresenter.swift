@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import UIKit
 
 final class TravelPackagesPurchasePresenter {
     
@@ -29,7 +30,7 @@ extension TravelPackagesPurchasePresenter {
         self.view.setup()
     }
     
-    func savingTravelPackagesToCart(travelPackage: TravelPackageModel?) {
+    func savingTravelPackagesToCart(travelPackage: TravelPackageModel?, imageView: UIImageView) {
         
         let realm = try! Realm()
         guard let travelPackages = travelPackage else {
@@ -40,7 +41,14 @@ extension TravelPackagesPurchasePresenter {
             database.name = travelPackages.title!
             database.price = travelPackages.price!
             database.travelPackageDescription = travelPackages.documents!
-            database.image = travelPackages.image!
+            database.location = travelPackages.location!
+            database.person = travelPackages.person!
+            database.daily = travelPackages.daily!
+            
+            if let images = imageView.image {
+                database.image = UIImagePNGRepresentation(images) as NSData?
+            }
+
             realm.add(database)
         }
         self.view.dismiss()

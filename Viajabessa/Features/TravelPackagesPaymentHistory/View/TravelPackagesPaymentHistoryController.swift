@@ -7,20 +7,29 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TravelPackagesPaymentHistoryController: UITableViewController {
-
+    
+    fileprivate var presenter: TravelPackagesPaymentHistoryControllerPresenter!
+    fileprivate var dataBase: Realm?
+    fileprivate var productDb: RealmSwift.Results<TravelPackageDatabase>?
+    fileprivate let rowHeightEmpty: CGFloat = 500
+    fileprivate let rowHeightBuy: CGFloat = 240
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        dataBase = try! Realm()
+        
+        self.presenter = TravelPackagesPaymentHistoryControllerPresenter(view: self)
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
         self.navigationController?.navigationBar.barTintColor = AppControl.shared.colorPrimary
+        
+        self.tableView.register(UINib(nibName: PaymentHistoryCell.identifier, bundle: nil), forCellReuseIdentifier: PaymentHistoryCell.identifier)
+        self.tableView.register(UINib(nibName: WithoutViewCell.identifier, bundle: nil), forCellReuseIdentifier: WithoutViewCell.identifier)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,78 +40,99 @@ class TravelPackagesPaymentHistoryController: UITableViewController {
         self.tabBarController?.tabBar.tintColor =  AppControl.shared.colorPrimary
         self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.black
     }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        self.presenter.setupInitializerView()
     }
+}
 
-    // MARK: - Table view data source
+// MARK: - Table view data source
 
+extension TravelPackagesPaymentHistoryController {
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
+    @objc fileprivate func goBack(){ self.navigationController?.popViewController(animated: false) }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        guard let buy = self.productDb else { return 0 }
+        if buy.count == 0 { return rowHeightEmpty }
+        return rowHeightBuy
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        guard let buy = self.productDb else { return 0 }
+        if buy.count == 0 { return 1 }
+        return buy.count
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    
+    internal override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let buy = self.productDb else { return UITableViewCell() }
+        if buy.count == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: WithoutViewCell.identifier, for: indexPath) as! WithoutViewCell
+            cell.setCellAttributes(txtWithout: "Nenhuma compra foi realizada.", image: UIImage(named: "sad")!)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: PaymentHistoryCell.identifier, for: indexPath) as! PaymentHistoryCell
+            cell.setContent(savePayment: buy[indexPath.row])
+            return cell
+        }
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            
+        if self.productDb?.count == 0 {
+           return
+        } else {
+            guard let purchases = self.productDb, let dataBase = self.dataBase else { return }
+            if (editingStyle == UITableViewCellEditingStyle.delete) {
+                try! dataBase.write {dataBase.delete(purchases[indexPath.item])}
+                updateData()
+            }
+        }
     }
-    */
+}
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+// MARK: - ViewProtocol
 
+extension TravelPackagesPaymentHistoryController: TravelPackagesPaymentHistoryControllerProtocol {
+    
+    
+    func addRightBarButtonItems() {
+        let cleanItem = UIBarButtonItem(title: "Deletar", style: .plain, target: self, action: #selector(self.cleanPurchases))
+        cleanItem.tintColor = .white
+        self.navigationItem.setRightBarButtonItems([cleanItem], animated: true)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    @objc func cleanPurchases() {
+        if self.productDb?.count == 0 {
+            Alert.show(delegate: self, title: ";)", message: "Nenhuma compra realizada", buttonTitle: "OK") { _ in }
+        }else {
+            Alert.show(delegate: self, title: "Deletar todas as compras?", message: "Você tem certeza que deseja apagar todas as compras.", buttonTitle: "OK", hasChoice: true) { choice in
+                if choice {
+                    guard let dataBase = self.dataBase else {
+                        return
+                    }
+                    try! dataBase.write {
+                        dataBase.deleteAll()
+                    }
+                    self.updateData()
+                }
+            }
+        }
     }
-    */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateData() {
+        guard let dataBase = self.dataBase else { return }
+        productDb = dataBase.objects(TravelPackageDatabase.self)
+        tableView.reloadData()
     }
-    */
-
 }

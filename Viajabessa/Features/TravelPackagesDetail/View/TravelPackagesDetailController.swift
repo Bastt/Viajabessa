@@ -23,6 +23,7 @@ class TravelPackagesDetailController: UITableViewController {
         
         self.presenter = TravelPackagesDetailPresenter(view: self)
         self.presenter.setupInitializerView()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
 }
 

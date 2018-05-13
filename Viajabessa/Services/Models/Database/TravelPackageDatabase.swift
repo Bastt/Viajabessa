@@ -15,5 +15,9 @@ class TravelPackageDatabase: Object {
     @objc dynamic var name = ""
     @objc dynamic var travelPackageDescription = ""
     @objc dynamic var price = ""
-    @objc dynamic var image = ""
+    @objc dynamic var image: NSData? = nil
+    @objc dynamic var location = ""
+    @objc dynamic var daily = ""
+    @objc dynamic var person = ""
+
 }

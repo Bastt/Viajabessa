@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol TravelPackagesPaymentHistoryControllerProtocol : class {
+    func updateData()
+    func addRightBarButtonItems()
+    func cleanPurchases()
+}

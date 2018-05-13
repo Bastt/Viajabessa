@@ -37,6 +37,7 @@ class TravelPackagesPurchaseController: UITableViewController {
         
         self.presenter = TravelPackagesPurchasePresenter(view: self)
         self.presenter.setupInitializerView()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
 }
 
@@ -55,7 +56,7 @@ extension TravelPackagesPurchaseController {
     @IBAction func payment(_ sender: AnyObject) {
         
         if checkFields() {
-            self.presenter.savingTravelPackagesToCart(travelPackage: self.travelPackageModel)
+            self.presenter.savingTravelPackagesToCart(travelPackage: self.travelPackageModel, imageView: self.imageProduct)
             Alert.show(delegate: self, title: "Compra Finalizada", message: "Sua compra foi finalizada com sucesso") { _ in
                 self.navigationController?.popToRootViewController(animated: true)
             }
