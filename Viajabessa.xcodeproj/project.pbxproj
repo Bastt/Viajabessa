@@ -21,6 +21,7 @@
 		31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */; };
 		31FBF43620A3749500D15D79 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBF43520A3749500D15D79 /* NSObject.swift */; };
 		31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */; };
+		9F0E065920A881AB00C35E3C /* VSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0E065820A881AA00C35E3C /* VSTextField.swift */; };
 		9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */; };
 		9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */; };
 		9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */; };
@@ -59,6 +60,7 @@
 		31E06DDB20A382150083465A /* TravelPackageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageCollectionViewCell.swift; sourceTree = "<group>"; };
 		31FBF43520A3749500D15D79 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		31FBF43820A3751600D15D79 /* TravelPackagesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesViewCell.swift; sourceTree = "<group>"; };
+		9F0E065820A881AA00C35E3C /* VSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSTextField.swift; sourceTree = "<group>"; };
 		9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailController.swift; sourceTree = "<group>"; };
 		9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailPresenter.swift; sourceTree = "<group>"; };
 		9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailProtocol.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		3168055C20A21CDE004D0E22 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9F0E065820A881AA00C35E3C /* VSTextField.swift */,
 				9FE9671D20A7BF9200A731C4 /* Alert */,
 				31FBF43420A3746F00D15D79 /* Extensions */,
 				3168055B20A21CCB004D0E22 /* Service */,
@@ -531,6 +534,7 @@
 				9FE9674B20A8032100A731C4 /* ButtonViewParameterization.swift in Sources */,
 				9FE9673D20A7CFA800A731C4 /* AppControl.swift in Sources */,
 				3168055F20A21D13004D0E22 /* ServiceManager.swift in Sources */,
+				9F0E065920A881AB00C35E3C /* VSTextField.swift in Sources */,
 				9FE9674320A7FBC500A731C4 /* WithoutViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,12 +21,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="XOe-uN-1eg">
                                 <rect key="frame" x="70" y="237" width="234" height="193"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viajabessa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyo-7y-I4z">
+                                <rect key="frame" x="44" y="78" width="286" height="68"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="65"/>
+                                <color key="textColor" red="0.93758422139999997" green="0.78071409459999996" blue="0.36815345290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88627450980392153" green="0.3411764705882353" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vda-73-VD0" firstAttribute="bottom" secondItem="XOe-uN-1eg" secondAttribute="bottom" constant="237" id="6li-0V-T8K"/>
+                            <constraint firstItem="XOe-uN-1eg" firstAttribute="top" secondItem="dyo-7y-I4z" secondAttribute="bottom" constant="91" id="7xn-RA-FzA"/>
                             <constraint firstItem="XOe-uN-1eg" firstAttribute="centerX" secondItem="hoB-DP-h7g" secondAttribute="centerX" id="Opa-nV-TbB"/>
+                            <constraint firstItem="dyo-7y-I4z" firstAttribute="top" secondItem="Vda-73-VD0" secondAttribute="top" constant="58" id="RAD-rd-dAx"/>
                             <constraint firstItem="XOe-uN-1eg" firstAttribute="top" secondItem="Vda-73-VD0" secondAttribute="top" constant="217" id="SOs-4L-TLQ"/>
+                            <constraint firstItem="dyo-7y-I4z" firstAttribute="centerX" secondItem="XOe-uN-1eg" secondAttribute="centerX" id="X3X-mj-5Zv"/>
+                            <constraint firstItem="dyo-7y-I4z" firstAttribute="leading" secondItem="Vda-73-VD0" secondAttribute="leading" constant="44" id="sOV-A1-RX1"/>
                             <constraint firstItem="XOe-uN-1eg" firstAttribute="leading" secondItem="Vda-73-VD0" secondAttribute="leading" constant="70" id="uEA-G6-V0Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vda-73-VD0"/>

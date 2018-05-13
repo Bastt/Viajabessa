@@ -11,5 +11,4 @@ import Foundation
 protocol TravelPackagesDetailProtocol : class {
     func setup()
     func setAttributesView()
-    func dismiss()
 }

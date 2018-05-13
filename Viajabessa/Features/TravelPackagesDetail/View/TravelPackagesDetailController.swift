@@ -38,8 +38,6 @@ extension TravelPackagesDetailController {
         return 4
     }
 }
-    
-    
 
 // MARK: - UIStoryboardSegue
 
@@ -51,19 +49,13 @@ extension TravelPackagesDetailController {
                 if let travelPackagesPurchase = segue.destination as? TravelPackagesPurchaseController {
                     travelPackagesPurchase.travelPackageModel = travelPackage
                 }
-        
+
             default: print("Identifier \(identifier) isn't a valid segue")
             }
         }
     }
 }
 
-//extension TravelPackagesDetailController {
-//
-//    @IBAction func buttonTouched() {
-//        self.presenter.savingTravelPackagesToCart(travelPackage: self.travelPackage)
-//    }
-//}
 
 // MARK: - ViewProtocol
 
@@ -79,11 +71,7 @@ extension TravelPackagesDetailController: TravelPackagesDetailProtocol {
             travelPackageImage!.af_setImage(withURL: imageURL)
         }
     }
-    
-    func dismiss() {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
+        
     func setAttributesView() {
     }
 }

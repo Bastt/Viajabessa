@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 final class TravelPackagesDetailPresenter {
     
@@ -24,24 +23,5 @@ extension TravelPackagesDetailPresenter {
     func setupInitializerView() {
         self.view.setup()
         self.view.setAttributesView()
-    }
-    
-    func savingTravelPackagesToCart(travelPackage: TravelPackageModel?) {
-        
-        let realm = try! Realm()
-        try! realm.write {
-            let database = TravelPackageDatabase()
-            guard let travelPackages = travelPackage else {
-                return
-            }
-            database.name = travelPackages.title!
-            database.price = travelPackages.price!
-            database.travelPackageDescription = travelPackages.documents!
-            database.image = travelPackages.image!
-            realm.add(database)
-        }
-        Alert.show(delegate: self, title: "Pacote adicionado", message: "O Pacote de viagem foi com adicionado no carrinho") { _ in
-            self.view.dismiss()
-        }
     }
 }

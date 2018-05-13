@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+protocol TravelPackagesPurchaseProtocol: class {
+    
+    func setup()
+    func VSTextField()
+    func addDoneButton()
+    func resetField()
+    func checkFields() -> Bool
+    func tintCell()
+    func dismiss()
+    func setAttributesView() 
+}
