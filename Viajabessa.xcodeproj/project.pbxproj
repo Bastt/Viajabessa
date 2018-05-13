@@ -29,6 +29,14 @@
 		9FE9672520A7C12900A731C4 /* TravelPackagesCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9672420A7C12900A731C4 /* TravelPackagesCartPresenter.swift */; };
 		9FE9672720A7C14100A731C4 /* TravelPackagesCartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9672620A7C14100A731C4 /* TravelPackagesCartProtocol.swift */; };
 		9FE9672920A7C17B00A731C4 /* TravelPackagesCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9672820A7C17B00A731C4 /* TravelPackagesCartController.swift */; };
+		9FE9673120A7CD5900A731C4 /* TravelPackagesPurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */; };
+		9FE9673320A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */; };
+		9FE9673520A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */; };
+		9FE9673720A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673620A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift */; };
+		9FE9673920A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673820A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift */; };
+		9FE9673B20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */; };
+		9FE9673D20A7CFA800A731C4 /* AppControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673C20A7CFA800A731C4 /* AppControl.swift */; };
+		9FE9673F20A7D01600A731C4 /* Coloring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673E20A7D01600A731C4 /* Coloring.swift */; };
 		9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1220A1156C00514B1B /* AppDelegate.swift */; };
 		9FFFEC1820A1156C00514B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1620A1156C00514B1B /* Main.storyboard */; };
 		9FFFEC1A20A1156C00514B1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFFEC1920A1156C00514B1B /* Assets.xcassets */; };
@@ -59,6 +67,14 @@
 		9FE9672420A7C12900A731C4 /* TravelPackagesCartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesCartPresenter.swift; sourceTree = "<group>"; };
 		9FE9672620A7C14100A731C4 /* TravelPackagesCartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesCartProtocol.swift; sourceTree = "<group>"; };
 		9FE9672820A7C17B00A731C4 /* TravelPackagesCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesCartController.swift; sourceTree = "<group>"; };
+		9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchaseController.swift; sourceTree = "<group>"; };
+		9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchasePresenter.swift; sourceTree = "<group>"; };
+		9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchaseProtocol.swift; sourceTree = "<group>"; };
+		9FE9673620A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryController.swift; sourceTree = "<group>"; };
+		9FE9673820A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryControllerPresenter.swift; sourceTree = "<group>"; };
+		9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryControllerProtocol.swift; sourceTree = "<group>"; };
+		9FE9673C20A7CFA800A731C4 /* AppControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppControl.swift; sourceTree = "<group>"; };
+		9FE9673E20A7D01600A731C4 /* Coloring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coloring.swift; sourceTree = "<group>"; };
 		9FFFEC0F20A1156C00514B1B /* Viajabessa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viajabessa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFFEC1220A1156C00514B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFFEC1720A1156C00514B1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				31FBF43520A3749500D15D79 /* NSObject.swift */,
+				9FE9673E20A7D01600A731C4 /* Coloring.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,6 +266,58 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		9FE9672A20A7CCB100A731C4 /* TravelPackagesPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9672C20A7CD1600A731C4 /* View */,
+				9FE9672E20A7CD2700A731C4 /* Presenter */,
+			);
+			path = TravelPackagesPurchase;
+			sourceTree = "<group>";
+		};
+		9FE9672B20A7CCDA00A731C4 /* TravelPackagesPaymentHistory */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9672D20A7CD1F00A731C4 /* View */,
+				9FE9672F20A7CD3A00A731C4 /* Presenter */,
+			);
+			path = TravelPackagesPaymentHistory;
+			sourceTree = "<group>";
+		};
+		9FE9672C20A7CD1600A731C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FE9672D20A7CD1F00A731C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9673620A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FE9672E20A7CD2700A731C4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */,
+				9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9FE9672F20A7CD3A00A731C4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9FE9673820A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift */,
+				9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		9FFFEC0620A1156C00514B1B = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +364,7 @@
 				9FFFEC1920A1156C00514B1B /* Assets.xcassets */,
 				9FFFEC1E20A1156C00514B1B /* Info.plist */,
 				3168055920A21A7C004D0E22 /* ServiceURL.swift */,
+				9FE9673C20A7CFA800A731C4 /* AppControl.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -305,6 +375,8 @@
 				3168056820A22B6B004D0E22 /* TravelPackagesList */,
 				9FE9671020A7742F00A731C4 /* TravelPackagesDetail */,
 				9FE9672120A7C0E400A731C4 /* TravelPackagesCart */,
+				9FE9672A20A7CCB100A731C4 /* TravelPackagesPurchase */,
+				9FE9672B20A7CCDA00A731C4 /* TravelPackagesPaymentHistory */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -454,15 +526,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE9673F20A7D01600A731C4 /* Coloring.swift in Sources */,
 				3168056520A21D56004D0E22 /* ServiceError.swift in Sources */,
 				3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */,
+				9FE9673520A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift in Sources */,
+				9FE9673920A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift in Sources */,
 				31C9E93120A212AE00F4019F /* Packs.swift in Sources */,
+				9FE9673120A7CD5900A731C4 /* TravelPackagesPurchaseController.swift in Sources */,
 				9FE9671C20A7B87C00A731C4 /* TravelPackageDatabase.swift in Sources */,
 				9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */,
 				9FE9672020A7BFB100A731C4 /* Alert.swift in Sources */,
 				9FE9672920A7C17B00A731C4 /* TravelPackagesCartController.swift in Sources */,
+				9FE9673B20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift in Sources */,
+				9FE9673320A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift in Sources */,
 				31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */,
 				31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */,
+				9FE9673720A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift in Sources */,
 				9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */,
 				9FE9672720A7C14100A731C4 /* TravelPackagesCartProtocol.swift in Sources */,
 				9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */,
@@ -475,6 +554,7 @@
 				31FBF43620A3749500D15D79 /* NSObject.swift in Sources */,
 				31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */,
 				3168057320A23CD3004D0E22 /* TravelPackagesListController.swift in Sources */,
+				9FE9673D20A7CFA800A731C4 /* AppControl.swift in Sources */,
 				3168055F20A21D13004D0E22 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Travel Packages List Controller-->
+        <!--Destaques-->
         <scene sceneID="XKf-tD-4nc">
             <objects>
                 <tableViewController id="ZUt-0h-lkS" customClass="TravelPackagesListController" customModule="Viajabessa" customModuleProvider="target" sceneMemberID="viewController">
@@ -202,7 +202,7 @@
                             <outlet property="delegate" destination="ZUt-0h-lkS" id="fRu-rK-Yj4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gRT-bs-zu8"/>
+                    <navigationItem key="navigationItem" title="Destaques" id="gRT-bs-zu8"/>
                     <connections>
                         <segue destination="n52-3W-yTc" kind="show" identifier="travelPackagesDetails" id="x8y-4k-9HY"/>
                     </connections>

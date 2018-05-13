@@ -1,5 +1,5 @@
 //
-//  TravelPackagesCartController.swift
+//  TravelPackagesPurchaseController.swift
 //  Viajabessa
 //
 //  Created by Ronilson on 12/05/2018.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class TravelPackagesCartController: UITableViewController {
-    
+class TravelPackagesPurchaseController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,26 +24,17 @@ class TravelPackagesCartController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        tabBarItem = UITabBarItem(title: "cesto", image: UIImage(named: "shopping-icon"), tag: 1)
-        self.tabBarController?.tabBar.backgroundColor = UIColor.white
-        self.tabBarController?.tabBar.tintColor =  AppControl.shared.colorPrimary
-        self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.black
-    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 0
     }
 
     /*

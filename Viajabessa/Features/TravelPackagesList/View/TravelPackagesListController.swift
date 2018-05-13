@@ -72,14 +72,14 @@ extension TravelPackagesListController: TravelPackagesListProtocol {
     
     func navigationItem() {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
-        self.navigationController?.navigationBar.barTintColor = UIColor.blue
+        self.navigationController?.navigationBar.barTintColor = AppControl.shared.colorPrimary
     }
     
     func tabBarItem() {
         tabBarItem = UITabBarItem(title: "destaques", image: UIImage(named: "star"), tag: 0)
         self.tabBarController?.tabBarItem.title = "destaques"
         self.tabBarController?.tabBar.backgroundColor = UIColor.white
-        self.tabBarController?.tabBar.tintColor = UIColor.blue
+        self.tabBarController?.tabBar.tintColor = AppControl.shared.colorPrimary
         self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.black
     }
     
