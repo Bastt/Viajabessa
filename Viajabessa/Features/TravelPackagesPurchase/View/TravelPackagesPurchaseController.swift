@@ -123,7 +123,7 @@ extension TravelPackagesPurchaseController: TravelPackagesPurchaseProtocol {
             return
         }
         
-        let errorColor = AppControl.shared.colorError
+        let errorColor = AppColor.shared.colorError
         
         if name.count < 2 { userNameCell.backgroundColor = errorColor }
         else { userNameCell.backgroundColor = .clear }
@@ -137,7 +137,7 @@ extension TravelPackagesPurchaseController: TravelPackagesPurchaseProtocol {
     
     func setAttributesView() {
         ButtonViewParameterization.cornerRadius(view: self.containerButtonView)
-        ButtonViewParameterization.shadowView(view: self.containerShadowButtonView, color: AppControl.shared.colorPrimary)
+        ButtonViewParameterization.shadowView(view: self.containerShadowButtonView, color: AppColor.shared.colorPrimary)
     }
     
     func setupView() {

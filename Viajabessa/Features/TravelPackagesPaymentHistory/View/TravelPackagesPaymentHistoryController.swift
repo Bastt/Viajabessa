@@ -25,7 +25,7 @@ class TravelPackagesPaymentHistoryController: UITableViewController {
         self.presenter = TravelPackagesPaymentHistoryControllerPresenter(view: self)
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
-        self.navigationController?.navigationBar.barTintColor = AppControl.shared.colorPrimary
+        self.navigationController?.navigationBar.barTintColor = AppColor.shared.colorPrimary
         
         self.tableView.register(UINib(nibName: PaymentHistoryCell.identifier, bundle: nil), forCellReuseIdentifier: PaymentHistoryCell.identifier)
         self.tableView.register(UINib(nibName: WithoutViewCell.identifier, bundle: nil), forCellReuseIdentifier: WithoutViewCell.identifier)
@@ -37,7 +37,7 @@ class TravelPackagesPaymentHistoryController: UITableViewController {
         
         tabBarItem = UITabBarItem(title: "histórico", image: UIImage(named: "shopping-icon"), tag: 1)
         self.tabBarController?.tabBar.backgroundColor = UIColor.white
-        self.tabBarController?.tabBar.tintColor =  AppControl.shared.colorPrimary
+        self.tabBarController?.tabBar.tintColor =  AppColor.shared.colorPrimary
         self.tabBarController?.tabBar.unselectedItemTintColor = UIColor.black
     }
     override func viewWillAppear(_ animated: Bool) {

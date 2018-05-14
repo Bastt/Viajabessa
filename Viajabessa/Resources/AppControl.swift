@@ -8,8 +8,9 @@
 
 import UIKit
 
-class AppControl {
-    static public let shared = AppControl()
+class AppColor {
+    static public let shared = AppColor()
     let colorPrimary = UIColor(hexadecimal: 0xE2574C)
+    let colorSnow = UIColor(hexadecimal: 0xF7F7F7)
     let colorError = UIColor.red
 }

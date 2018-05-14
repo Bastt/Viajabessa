@@ -19,8 +19,8 @@ class WithoutViewCell: UITableViewCell {
     
     func setCellAttributes(txtWithout: String, image: UIImage) {
         self.txtWithout.text = txtWithout
-        self.txtWithout.textColor = AppControl.shared.colorPrimary
+        self.txtWithout.textColor = AppColor.shared.colorPrimary
         self.imageWithout.image = image
-        self.imageWithout.image = self.imageWithout.image?.overlayImage(AppControl.shared.colorPrimary)
+        self.imageWithout.image = self.imageWithout.image?.overlayImage(AppColor.shared.colorPrimary)
     }
 }
