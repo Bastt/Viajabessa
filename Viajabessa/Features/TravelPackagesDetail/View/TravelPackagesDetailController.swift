@@ -10,8 +10,6 @@ import UIKit
 
 class TravelPackagesDetailController: UITableViewController {
     
-    @IBOutlet fileprivate weak var containerButtonView: UIView!
-    @IBOutlet fileprivate weak var containerShadowButtonView: UIView!
     @IBOutlet fileprivate weak var travelPackageName: UILabel!
     @IBOutlet fileprivate weak var travelPackagePrice: UILabel!
     @IBOutlet fileprivate weak var travelPackageDaily: UILabel!
@@ -24,6 +22,7 @@ class TravelPackagesDetailController: UITableViewController {
 
     var travelPackage: TravelPackageModel?
     fileprivate var presenter: TravelPackagesDetailPresenter!
+    fileprivate var investButton : UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +42,29 @@ extension TravelPackagesDetailController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 6
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+
+        let customView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 41))
+        customView.backgroundColor = AppColor.shared.colorPrimary
+        customView.layer.cornerRadius = 10.0
+        customView.layer.shadowOpacity = 0.8
+        customView.layer.shadowColor = AppColor.shared.colorSnow.cgColor
+        customView.layer.shadowRadius = 3.0
+        customView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 330, height: 50))
+        button.setTitle("              Ir para o pagamento", for: .normal)
+        button.titleLabel!.font = UIFont.systemFont(ofSize: 20.0, weight: UIFont.Weight.medium)
+        button.addTarget(self, action: #selector(self.travelPackagesPurchase), for: .touchUpInside)
+        customView.addSubview(button)
+        
+        return customView
+    }
+    
+   override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 50
     }
 }
 
@@ -67,6 +88,11 @@ extension TravelPackagesDetailController {
 // MARK: - ViewProtocol
 
 extension TravelPackagesDetailController: TravelPackagesDetailProtocol {
+    
+    @objc func travelPackagesPurchase() {
+        let travelPackagesPurchase = "travelPackagesPurchase"
+        performSegue(withIdentifier: travelPackagesPurchase, sender: nil)
+    }
 
     func setup() {
         guard let travelPackage = self.travelPackage else { return  }
@@ -83,10 +109,5 @@ extension TravelPackagesDetailController: TravelPackagesDetailProtocol {
         if let imageString = travelPackage.image, let imageURL = URL(string: imageString) {
             travelPackageImage!.af_setImage(withURL: imageURL)
         }
-    }
-    
-    func setAttributesView() {
-        ButtonViewParameterization.cornerRadius(view: self.containerButtonView)
-        ButtonViewParameterization.shadowView(view: self.containerShadowButtonView, color: AppColor.shared.colorPrimary)
     }
 }

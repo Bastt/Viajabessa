@@ -22,6 +22,5 @@ extension TravelPackagesDetailPresenter {
     
     func setupInitializerView() {
         self.view.setup()
-        self.view.setAttributesView()
     }
 }

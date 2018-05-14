@@ -542,48 +542,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="55" id="Z1k-iO-re5">
-                                        <rect key="frame" x="0.0" y="1066" width="414" height="55"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z1k-iO-re5" id="K71-xr-J86">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njA-hc-eoL">
-                                                    <rect key="frame" x="36" y="11" width="343" height="42"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-sg-POO">
-                                                    <rect key="frame" x="36" y="11" width="343" height="42"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-UE-6AX">
-                                                    <rect key="frame" x="36" y="11" width="343" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                                    <state key="normal" title="Comprar">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="7O3-cG-S6T" kind="show" identifier="travelPackagesPurchase" id="pm5-ww-kUG"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="njA-hc-eoL" firstAttribute="centerY" secondItem="z7b-sg-POO" secondAttribute="centerY" id="2cz-6m-80X"/>
-                                                <constraint firstItem="njA-hc-eoL" firstAttribute="top" secondItem="K71-xr-J86" secondAttribute="top" constant="11" id="7It-hV-Nvu"/>
-                                                <constraint firstItem="njA-hc-eoL" firstAttribute="centerX" secondItem="z7b-sg-POO" secondAttribute="centerX" id="7KU-hP-ffx"/>
-                                                <constraint firstAttribute="bottom" secondItem="njA-hc-eoL" secondAttribute="bottom" constant="2" id="FtP-ow-lZP"/>
-                                                <constraint firstItem="z7b-sg-POO" firstAttribute="centerX" secondItem="rRo-UE-6AX" secondAttribute="centerX" id="Kvh-l1-CIg"/>
-                                                <constraint firstItem="njA-hc-eoL" firstAttribute="height" secondItem="z7b-sg-POO" secondAttribute="height" id="Pkb-oe-oLE"/>
-                                                <constraint firstItem="njA-hc-eoL" firstAttribute="width" secondItem="z7b-sg-POO" secondAttribute="width" id="Yl2-3w-svO"/>
-                                                <constraint firstItem="z7b-sg-POO" firstAttribute="width" secondItem="rRo-UE-6AX" secondAttribute="width" id="a39-49-JUu"/>
-                                                <constraint firstItem="z7b-sg-POO" firstAttribute="height" secondItem="rRo-UE-6AX" secondAttribute="height" id="eEW-Kx-O91"/>
-                                                <constraint firstAttribute="trailing" secondItem="njA-hc-eoL" secondAttribute="trailing" constant="35" id="eRB-4V-XhP"/>
-                                                <constraint firstItem="z7b-sg-POO" firstAttribute="centerY" secondItem="rRo-UE-6AX" secondAttribute="centerY" id="myB-Dd-zZ8"/>
-                                                <constraint firstItem="njA-hc-eoL" firstAttribute="leading" secondItem="K71-xr-J86" secondAttribute="leading" constant="36" id="xt2-8F-hVC"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -593,8 +551,6 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="containerButtonView" destination="njA-hc-eoL" id="pGC-Kv-oAB"/>
-                        <outlet property="containerShadowButtonView" destination="z7b-sg-POO" id="rPR-kO-oeP"/>
                         <outlet property="travelDocuments" destination="zvs-WE-o6J" id="yOZ-fP-4Ik"/>
                         <outlet property="travelPackageDaily" destination="N0O-Zb-ggF" id="ml2-Cd-Lz0"/>
                         <outlet property="travelPackageImage" destination="G43-ei-Ss3" id="KRc-Qg-btf"/>
@@ -604,6 +560,7 @@
                         <outlet property="travelPackagePrice" destination="JPX-Jo-Xf4" id="E2m-Ks-HQr"/>
                         <outlet property="travelPeriodValid" destination="phv-hZ-gqW" id="Jgd-0a-LNd"/>
                         <outlet property="travelSchedule" destination="ykr-k4-mcJ" id="QgS-YE-aVz"/>
+                        <segue destination="7O3-cG-S6T" kind="show" identifier="travelPackagesPurchase" id="Zek-XU-KTF"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ol-lq-bZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1066,213 +1023,13 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bo0-Jv-pda" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewSection id="xZj-BE-8Yh">
-                    <cells>
-                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="243" id="uIT-6I-jnH">
-                            <rect key="frame" x="0.0" y="638" width="375" height="243"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uIT-6I-jnH" id="B0U-uN-e7J">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="243"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como agendar sua viagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAK-3z-MkQ">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="28"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="zZg-Dd-Euw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrE-vC-hak">
-                                        <rect key="frame" x="0.0" y="33" width="375" height="203"/>
-                                        <string key="text">Assim que sua compra for finalizada você receberá por e-mail um formulário onde deverá preencher com seus dados pessoais e sugerir 3 opções de datas para o embarque. Caso as datas escolhidas estejam lotadas, vamos sugerir novas opções.A primeira data deve ter pelo menos 45 dias a partir da data que você nos enviou o formulário. A distância entre as opções de datas deverá ser de pelo menos 7 dias, respeitando o período de validade do pacote.Uma vez finalizada a compra você terá até 10 dias para nos enviar esse formulário. O processo de reserva da sua viagem só começa após o envio do formulário. Caso você leve mais do que 10 dias, a partir da data da compra, para enviar o formulário, o valor do pacote poderá ser revisto, então não se atrase! </string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="lrE-vC-hak" firstAttribute="trailing" secondItem="xAK-3z-MkQ" secondAttribute="trailing" id="2lL-ba-tfR"/>
-                                    <constraint firstItem="lrE-vC-hak" firstAttribute="leading" secondItem="xAK-3z-MkQ" secondAttribute="leading" id="ZkL-dB-2gG"/>
-                                    <constraint firstItem="lrE-vC-hak" firstAttribute="top" secondItem="xAK-3z-MkQ" secondAttribute="bottom" constant="2" id="eDp-TC-x2v"/>
-                                    <constraint firstAttribute="trailing" secondItem="xAK-3z-MkQ" secondAttribute="trailing" id="jV3-NQ-Kr1"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="lrE-vC-hak" secondAttribute="bottom" constant="-4" id="w8Q-em-8vC"/>
-                                    <constraint firstItem="xAK-3z-MkQ" firstAttribute="top" secondItem="B0U-uN-e7J" secondAttribute="topMargin" constant="-8" id="xLZ-F4-UQh"/>
-                                    <constraint firstItem="xAK-3z-MkQ" firstAttribute="leading" secondItem="B0U-uN-e7J" secondAttribute="leading" id="xeG-2Q-tHe"/>
-                                </constraints>
-                            </tableViewCellContentView>
-                        </tableViewCell>
-                    </cells>
-                </tableViewSection>
-                <tableViewSection id="mWi-y5-ncS">
-                    <cells>
-                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="162" id="MFG-9J-gzj">
-                            <rect key="frame" x="0.0" y="359" width="375" height="162"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MFG-9J-gzj" id="m0x-d9-km1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Período válido para viajar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z60-s4-IYS">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="28"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="L3J-r2-a6K"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vQ-sq-HjR">
-                                        <rect key="frame" x="0.0" y="33" width="375" height="122"/>
-                                        <string key="text">De 1º de Agosto a 30 de Novembro de 2017, exceto semanas de feriados e evento na cidade de origem ou de destino.Esse pacote, por ser promocional, não terá opção de escolha da companhia aérea, horário do voo e/ou tipo de quarto. Caso você precise alterar algum item mencionado anteriormente, as condições ofertadas serão revistas, buscando atender a sua nova necessidade, onde informaremos as diferenças tarifárias.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="4vQ-sq-HjR" firstAttribute="top" secondItem="Z60-s4-IYS" secondAttribute="bottom" constant="2" id="64d-mB-iNa"/>
-                                    <constraint firstItem="4vQ-sq-HjR" firstAttribute="leading" secondItem="Z60-s4-IYS" secondAttribute="leading" id="KWK-nJ-VYu"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="4vQ-sq-HjR" secondAttribute="bottom" constant="-4" id="LlG-cI-VAd"/>
-                                    <constraint firstItem="Z60-s4-IYS" firstAttribute="top" secondItem="m0x-d9-km1" secondAttribute="topMargin" constant="-8" id="gQe-H1-W7G"/>
-                                    <constraint firstItem="4vQ-sq-HjR" firstAttribute="trailing" secondItem="Z60-s4-IYS" secondAttribute="trailing" id="kim-Sj-gXp"/>
-                                    <constraint firstItem="Z60-s4-IYS" firstAttribute="leading" secondItem="m0x-d9-km1" secondAttribute="leading" id="lbY-7e-d6s"/>
-                                    <constraint firstAttribute="trailing" secondItem="Z60-s4-IYS" secondAttribute="trailing" id="z5W-gq-Zfz"/>
-                                </constraints>
-                            </tableViewCellContentView>
-                        </tableViewCell>
-                    </cells>
-                </tableViewSection>
-                <tableViewSection id="avm-BG-iGq">
-                    <cells>
-                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="117" id="WVf-Ew-hfm">
-                            <rect key="frame" x="0.0" y="521" width="375" height="117"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WVf-Ew-hfm" id="a15-2M-JmV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="117"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comodidades / Serviços" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFG-98-CJq">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="28"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="mm3-8n-pHR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aviao-no-ar_2" translatesAutoresizingMaskIntoConstraints="NO" id="blv-Mx-2br">
-                                        <rect key="frame" x="16" y="35" width="54" height="43"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="54" id="YwN-hN-Gw1"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EF-p7-pEH">
-                                        <rect key="frame" x="78" y="46" width="131" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="131" id="t5c-22-1GJ"/>
-                                        </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Passagem Aérea">
-                                                <attributes>
-                                                    <font key="NSFont" size="15" name="Helvetica"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apartment_icon-icons.com_48363" translatesAutoresizingMaskIntoConstraints="NO" id="LoW-bR-dS5">
-                                        <rect key="frame" x="16" y="74" width="54" height="37"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-nc-xCK">
-                                        <rect key="frame" x="78" y="85" width="131" height="15"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Apartamento">
-                                                <attributes>
-                                                    <font key="NSFont" size="15" name="Helvetica"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="1EF-p7-pEH" firstAttribute="leading" secondItem="blv-Mx-2br" secondAttribute="trailing" constant="8" symbolic="YES" id="1X5-hs-M4K"/>
-                                    <constraint firstAttribute="trailing" secondItem="wFG-98-CJq" secondAttribute="trailing" id="1rx-tT-X0F"/>
-                                    <constraint firstItem="1EF-p7-pEH" firstAttribute="trailing" secondItem="hbi-nc-xCK" secondAttribute="trailing" id="1v9-WR-vEI"/>
-                                    <constraint firstItem="LoW-bR-dS5" firstAttribute="top" secondItem="wFG-98-CJq" secondAttribute="bottom" constant="43" id="7Ll-p8-1jN"/>
-                                    <constraint firstItem="blv-Mx-2br" firstAttribute="centerY" secondItem="1EF-p7-pEH" secondAttribute="centerY" id="8Dv-to-RPX"/>
-                                    <constraint firstItem="blv-Mx-2br" firstAttribute="leading" secondItem="a15-2M-JmV" secondAttribute="leadingMargin" id="FRF-QW-9UD"/>
-                                    <constraint firstItem="blv-Mx-2br" firstAttribute="top" secondItem="wFG-98-CJq" secondAttribute="bottom" constant="4" id="ITt-Rx-PSA"/>
-                                    <constraint firstItem="hbi-nc-xCK" firstAttribute="leading" secondItem="LoW-bR-dS5" secondAttribute="trailing" constant="8" symbolic="YES" id="NhB-xn-UU7"/>
-                                    <constraint firstItem="1EF-p7-pEH" firstAttribute="top" secondItem="wFG-98-CJq" secondAttribute="bottom" constant="15" id="RYJ-KX-0R3"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="hbi-nc-xCK" secondAttribute="bottom" constant="6" id="TAK-5E-o8A"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="LoW-bR-dS5" secondAttribute="bottom" constant="-5" id="Tlr-TD-MYy"/>
-                                    <constraint firstItem="hbi-nc-xCK" firstAttribute="top" secondItem="1EF-p7-pEH" secondAttribute="bottom" constant="18" id="czr-Mk-Uyj"/>
-                                    <constraint firstItem="wFG-98-CJq" firstAttribute="leading" secondItem="a15-2M-JmV" secondAttribute="leading" id="gMV-vq-1em"/>
-                                    <constraint firstItem="wFG-98-CJq" firstAttribute="top" secondItem="a15-2M-JmV" secondAttribute="topMargin" constant="-8" id="jBq-hg-52c"/>
-                                    <constraint firstItem="blv-Mx-2br" firstAttribute="leading" secondItem="LoW-bR-dS5" secondAttribute="leading" id="pbF-iA-o4o"/>
-                                    <constraint firstItem="LoW-bR-dS5" firstAttribute="centerY" secondItem="hbi-nc-xCK" secondAttribute="centerY" id="xVJ-Cm-Bod"/>
-                                    <constraint firstItem="1EF-p7-pEH" firstAttribute="leading" secondItem="hbi-nc-xCK" secondAttribute="leading" id="xyO-hm-3df"/>
-                                </constraints>
-                            </tableViewCellContentView>
-                        </tableViewCell>
-                    </cells>
-                </tableViewSection>
-                <tableViewSection id="dje-Im-Z2S">
-                    <cells>
-                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="185" id="zDD-rP-Jsm">
-                            <rect key="frame" x="0.0" y="881" width="375" height="185"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zDD-rP-Jsm" id="gUR-m8-D2M">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documentos para viajar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbP-Ri-fYl">
-                                        <rect key="frame" x="0.0" y="3" width="375" height="28"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="28" id="TtN-xN-EeU"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueE-5w-Erf">
-                                        <rect key="frame" x="0.0" y="33" width="375" height="145"/>
-                                        <string key="text">É de responsabilidade do viajante ter a documentação necessária em dia para viagem.Passaporte e visto americano com, pelo menos, 6 meses de validade.O trajeto de ida e volta de Miami para Orlando deverá ser feito de carro (aluguel já incluso no pacote).Para o aluguel, é necessário que o viajante tenha 25 anos ou mais, CNH brasileira válida e cartão de crédito internacional no nome do motorista. Taxas e impostos locais do aluguel de carro não inclusas e deverão ser pagas diretamente na locadora</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ueE-5w-Erf" firstAttribute="leading" secondItem="DbP-Ri-fYl" secondAttribute="leading" id="Lpf-NN-5xl"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="ueE-5w-Erf" secondAttribute="bottom" constant="-4" id="PRs-Ia-uEa"/>
-                                    <constraint firstItem="ueE-5w-Erf" firstAttribute="top" secondItem="DbP-Ri-fYl" secondAttribute="bottom" constant="2" id="WCH-TQ-e50"/>
-                                    <constraint firstAttribute="trailing" secondItem="DbP-Ri-fYl" secondAttribute="trailing" id="hzK-eF-PVe"/>
-                                    <constraint firstItem="ueE-5w-Erf" firstAttribute="trailing" secondItem="DbP-Ri-fYl" secondAttribute="trailing" id="j3r-sq-64E"/>
-                                    <constraint firstItem="DbP-Ri-fYl" firstAttribute="top" secondItem="gUR-m8-D2M" secondAttribute="topMargin" constant="-8" id="ny8-a7-6KO"/>
-                                    <constraint firstItem="DbP-Ri-fYl" firstAttribute="leading" secondItem="gUR-m8-D2M" secondAttribute="leading" id="wBZ-eE-ikK"/>
-                                </constraints>
-                            </tableViewCellContentView>
-                        </tableViewCell>
-                    </cells>
-                </tableViewSection>
             </objects>
             <point key="canvasLocation" x="1241" y="-602"/>
         </scene>
     </scenes>
     <resources>
         <image name="apartment" width="512" height="512"/>
-        <image name="apartment_icon-icons.com_48363" width="16" height="16"/>
         <image name="aviao" width="505" height="470"/>
-        <image name="aviao-no-ar_2" width="16" height="16"/>
         <image name="days" width="1600" height="1600"/>
         <image name="person" width="564" height="600"/>
     </resources>
