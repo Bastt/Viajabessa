@@ -19,5 +19,4 @@ class TravelPackageDatabase: Object {
     @objc dynamic var location = ""
     @objc dynamic var daily = ""
     @objc dynamic var person = ""
-
 }

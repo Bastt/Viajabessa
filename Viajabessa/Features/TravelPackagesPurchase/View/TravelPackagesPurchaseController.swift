@@ -42,6 +42,7 @@ class TravelPackagesPurchaseController: UITableViewController {
 }
 
 // MARK: - Table view data source
+
 extension TravelPackagesPurchaseController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {

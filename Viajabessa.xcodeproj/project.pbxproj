@@ -365,11 +365,11 @@
 		9FFFEC2820A1162500514B1B /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				9FE9674020A7FBA300A731C4 /* WithoutCell */,
-				3168056820A22B6B004D0E22 /* TravelPackagesList */,
 				9FE9671020A7742F00A731C4 /* TravelPackagesDetail */,
-				9FE9672A20A7CCB100A731C4 /* TravelPackagesPurchase */,
+				3168056820A22B6B004D0E22 /* TravelPackagesList */,
 				9FE9672B20A7CCDA00A731C4 /* TravelPackagesPaymentHistory */,
+				9FE9672A20A7CCB100A731C4 /* TravelPackagesPurchase */,
+				9FE9674020A7FBA300A731C4 /* WithoutCell */,
 			);
 			path = Features;
 			sourceTree = "<group>";

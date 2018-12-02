@@ -55,7 +55,8 @@ extension TravelPackagesDetailController {
         customView.layer.shadowRadius = 3.0
         customView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 330, height: 50))
-        button.setTitle("              Ir para o pagamento", for: .normal)
+        button.setTitle("Ir para o pagamento", for: .normal)
+        button.titleLabel?.textAlignment = .center
         button.titleLabel!.font = UIFont.systemFont(ofSize: 20.0, weight: UIFont.Weight.medium)
         button.addTarget(self, action: #selector(self.travelPackagesPurchase), for: .touchUpInside)
         customView.addSubview(button)

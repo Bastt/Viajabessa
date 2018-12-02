@@ -13,10 +13,6 @@ class WithoutViewCell: UITableViewCell {
     @IBOutlet fileprivate weak var txtWithout: UILabel!
     @IBOutlet fileprivate weak var imageWithout: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     func setCellAttributes(txtWithout: String, image: UIImage) {
         self.txtWithout.text = txtWithout
         self.txtWithout.textColor = AppColor.shared.colorPrimary

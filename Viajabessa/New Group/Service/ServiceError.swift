@@ -9,6 +9,7 @@
 import Foundation
 
 enum ServiceError {
+    
     case invalidRequisition
     case noAuthorized
     case notFound
