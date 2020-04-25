@@ -14,7 +14,6 @@
 		3168056520A21D56004D0E22 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056420A21D56004D0E22 /* ServiceError.swift */; };
 		3168056720A22084004D0E22 /* PacksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056620A22084004D0E22 /* PacksService.swift */; };
 		3168056C20A22C51004D0E22 /* TravelPackagesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056B20A22C51004D0E22 /* TravelPackagesListPresenter.swift */; };
-		3168056E20A22C96004D0E22 /* TravelPackagesListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168056D20A22C96004D0E22 /* TravelPackagesListProtocol.swift */; };
 		3168057320A23CD3004D0E22 /* TravelPackagesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168057120A23CD3004D0E22 /* TravelPackagesListController.swift */; };
 		31C9E93120A212AE00F4019F /* Packs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C9E93020A212AE00F4019F /* Packs.swift */; };
 		31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C9E93220A2163A00F4019F /* TravelPackageModel.swift */; };
@@ -26,15 +25,12 @@
 		9F0E065E20A8CB9000C35E3C /* PaymentHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0E065C20A8CB9000C35E3C /* PaymentHistoryCell.xib */; };
 		9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */; };
 		9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */; };
-		9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */; };
 		9FE9671C20A7B87C00A731C4 /* TravelPackageDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671B20A7B87C00A731C4 /* TravelPackageDatabase.swift */; };
 		9FE9672020A7BFB100A731C4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9671F20A7BFB100A731C4 /* Alert.swift */; };
 		9FE9673120A7CD5900A731C4 /* TravelPackagesPurchaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */; };
 		9FE9673320A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */; };
-		9FE9673520A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */; };
 		9FE9673720A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673620A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift */; };
 		9FE9673920A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673820A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift */; };
-		9FE9673B20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */; };
 		9FE9673D20A7CFA800A731C4 /* AppControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673C20A7CFA800A731C4 /* AppControl.swift */; };
 		9FE9673F20A7D01600A731C4 /* Coloring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9673E20A7D01600A731C4 /* Coloring.swift */; };
 		9FE9674320A7FBC500A731C4 /* WithoutViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE9674120A7FBC500A731C4 /* WithoutViewCell.swift */; };
@@ -55,7 +51,6 @@
 		3168056420A21D56004D0E22 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		3168056620A22084004D0E22 /* PacksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacksService.swift; sourceTree = "<group>"; };
 		3168056B20A22C51004D0E22 /* TravelPackagesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesListPresenter.swift; sourceTree = "<group>"; };
-		3168056D20A22C96004D0E22 /* TravelPackagesListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesListProtocol.swift; sourceTree = "<group>"; };
 		3168057120A23CD3004D0E22 /* TravelPackagesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesListController.swift; sourceTree = "<group>"; };
 		31C9E93020A212AE00F4019F /* Packs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packs.swift; sourceTree = "<group>"; };
 		31C9E93220A2163A00F4019F /* TravelPackageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageModel.swift; sourceTree = "<group>"; };
@@ -67,15 +62,12 @@
 		9F0E065C20A8CB9000C35E3C /* PaymentHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentHistoryCell.xib; sourceTree = "<group>"; };
 		9FE9671320A7760A00A731C4 /* TravelPackagesDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailController.swift; sourceTree = "<group>"; };
 		9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailPresenter.swift; sourceTree = "<group>"; };
-		9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesDetailProtocol.swift; sourceTree = "<group>"; };
 		9FE9671B20A7B87C00A731C4 /* TravelPackageDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackageDatabase.swift; sourceTree = "<group>"; };
 		9FE9671F20A7BFB100A731C4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		9FE9673020A7CD5900A731C4 /* TravelPackagesPurchaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchaseController.swift; sourceTree = "<group>"; };
 		9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchasePresenter.swift; sourceTree = "<group>"; };
-		9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPurchaseProtocol.swift; sourceTree = "<group>"; };
 		9FE9673620A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryController.swift; sourceTree = "<group>"; };
 		9FE9673820A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryControllerPresenter.swift; sourceTree = "<group>"; };
-		9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPackagesPaymentHistoryControllerProtocol.swift; sourceTree = "<group>"; };
 		9FE9673C20A7CFA800A731C4 /* AppControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppControl.swift; sourceTree = "<group>"; };
 		9FE9673E20A7D01600A731C4 /* Coloring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coloring.swift; sourceTree = "<group>"; };
 		9FE9674120A7FBC500A731C4 /* WithoutViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutViewCell.swift; sourceTree = "<group>"; };
@@ -146,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				3168056B20A22C51004D0E22 /* TravelPackagesListPresenter.swift */,
-				3168056D20A22C96004D0E22 /* TravelPackagesListProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -228,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				9FE9671520A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift */,
-				9FE9671720A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -288,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				9FE9673220A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift */,
-				9FE9673420A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -297,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				9FE9673820A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift */,
-				9FE9673A20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -411,11 +399,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Ronilson Batista";
 				TargetAttributes = {
 					9FFFEC0E20A1156C00514B1B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -478,7 +467,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -495,7 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Viajabessa/Pods-Viajabessa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,24 +497,20 @@
 				9FE9673F20A7D01600A731C4 /* Coloring.swift in Sources */,
 				3168056520A21D56004D0E22 /* ServiceError.swift in Sources */,
 				3168056220A21D36004D0E22 /* ServiceManagerProtocol.swift in Sources */,
-				9FE9673520A7CD7D00A731C4 /* TravelPackagesPurchaseProtocol.swift in Sources */,
 				9FE9673920A7CDD200A731C4 /* TravelPackagesPaymentHistoryControllerPresenter.swift in Sources */,
 				31C9E93120A212AE00F4019F /* Packs.swift in Sources */,
 				9FE9673120A7CD5900A731C4 /* TravelPackagesPurchaseController.swift in Sources */,
 				9FE9671C20A7B87C00A731C4 /* TravelPackageDatabase.swift in Sources */,
 				9FE9671420A7760A00A731C4 /* TravelPackagesDetailController.swift in Sources */,
 				9FE9672020A7BFB100A731C4 /* Alert.swift in Sources */,
-				9FE9673B20A7CDDF00A731C4 /* TravelPackagesPaymentHistoryControllerProtocol.swift in Sources */,
 				9FE9673320A7CD6D00A731C4 /* TravelPackagesPurchasePresenter.swift in Sources */,
 				31FBF43A20A3751600D15D79 /* TravelPackagesViewCell.swift in Sources */,
 				31C9E93320A2163A00F4019F /* TravelPackageModel.swift in Sources */,
 				9FE9673720A7CDBD00A731C4 /* TravelPackagesPaymentHistoryController.swift in Sources */,
 				9FE9671620A7AC3300A731C4 /* TravelPackagesDetailPresenter.swift in Sources */,
-				9FE9671820A7AC5800A731C4 /* TravelPackagesDetailProtocol.swift in Sources */,
 				3168055A20A21A7C004D0E22 /* ServiceURL.swift in Sources */,
 				9FFFEC1320A1156C00514B1B /* AppDelegate.swift in Sources */,
 				3168056C20A22C51004D0E22 /* TravelPackagesListPresenter.swift in Sources */,
-				3168056E20A22C96004D0E22 /* TravelPackagesListProtocol.swift in Sources */,
 				3168056720A22084004D0E22 /* PacksService.swift in Sources */,
 				31FBF43620A3749500D15D79 /* NSObject.swift in Sources */,
 				31E06DDD20A384910083465A /* TravelPackageCollectionViewCell.swift in Sources */,
@@ -575,6 +560,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -582,6 +568,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -632,6 +619,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -639,6 +627,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -680,7 +669,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ronilson.Viajabessa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -697,7 +686,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ronilson.Viajabessa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

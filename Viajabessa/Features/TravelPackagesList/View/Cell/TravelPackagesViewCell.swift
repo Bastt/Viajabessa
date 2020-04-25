@@ -37,9 +37,7 @@ class TravelPackagesViewCell: UITableViewCell {
 }
 
 // MARK: UICollectionViewDataSource
-
 extension TravelPackagesViewCell: UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.travelPackages.count
     }
@@ -53,9 +51,7 @@ extension TravelPackagesViewCell: UICollectionViewDataSource {
 }
 
 // MARK: UICollectionViewDelegate
-
 extension TravelPackagesViewCell:  UICollectionViewDelegate {
-    
     internal func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         guard let delegate = delegate else {

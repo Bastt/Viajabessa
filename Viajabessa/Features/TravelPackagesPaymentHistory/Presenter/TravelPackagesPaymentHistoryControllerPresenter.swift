@@ -8,8 +8,13 @@
 
 import Foundation
 
+protocol TravelPackagesPaymentHistoryControllerProtocol : class {
+    func updateData()
+    func addRightBarButtonItems()
+    func cleanPurchases()
+}
+
 final class TravelPackagesPaymentHistoryControllerPresenter {
-    
     fileprivate unowned let view: TravelPackagesPaymentHistoryControllerProtocol
     
     init(view: TravelPackagesPaymentHistoryControllerProtocol) {
@@ -19,9 +24,7 @@ final class TravelPackagesPaymentHistoryControllerPresenter {
 }
 
 // MARK: - Public methods
-
 extension TravelPackagesPaymentHistoryControllerPresenter {
-    
     func setupInitializerView() {
         self.view.updateData()
         self.view.addRightBarButtonItems()

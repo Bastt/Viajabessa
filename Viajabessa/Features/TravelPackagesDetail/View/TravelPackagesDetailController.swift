@@ -34,9 +34,7 @@ class TravelPackagesDetailController: UITableViewController {
 }
 
 // MARK: - Table view data source
-
 extension TravelPackagesDetailController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -70,7 +68,6 @@ extension TravelPackagesDetailController {
 }
 
 // MARK: - UIStoryboardSegue
-
 extension TravelPackagesDetailController {
     override internal func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
@@ -87,15 +84,13 @@ extension TravelPackagesDetailController {
 }
 
 // MARK: - ViewProtocol
-
 extension TravelPackagesDetailController: TravelPackagesDetailProtocol {
-    
     @objc func travelPackagesPurchase() {
         let travelPackagesPurchase = "travelPackagesPurchase"
         performSegue(withIdentifier: travelPackagesPurchase, sender: nil)
     }
 
-    func setup() {
+     func setup() {
         guard let travelPackage = self.travelPackage else { return  }
         
         self.travelPackageName.text = travelPackage.title

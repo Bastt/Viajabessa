@@ -25,9 +25,7 @@ class TravelPackagesListController: UITableViewController {
 }
 
 // MARK: - UITableViewDataSource
-
 extension TravelPackagesListController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.presenter.packs.count
     }
@@ -67,11 +65,9 @@ extension TravelPackagesListController {
 }
 
 // MARK: - ViewProtocol
-
 extension TravelPackagesListController: TravelPackagesListProtocol {
-    
     func navigationItem() {
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
         self.navigationController?.navigationBar.barTintColor = AppColor.shared.colorPrimary
     }
     
@@ -109,9 +105,7 @@ extension TravelPackagesListController: TravelPackagesListProtocol {
 }
 
 // MARK: - SelectingCollection
-
 extension TravelPackagesListController: SelectingCollection {
-    
     func collectionSelected(travelPackage: TravelPackageModel) {
         let productSelected = "travelPackagesDetails"
         itemSelect = (travelPackage)
@@ -119,7 +113,6 @@ extension TravelPackagesListController: SelectingCollection {
     }
     
     // MARK: - Navigation
-
     override internal func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             switch identifier {

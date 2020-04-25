@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TravelPackagesDetailProtocol : class {
+    func setup()
+}
+
 final class TravelPackagesDetailPresenter {
     
     fileprivate unowned let view: TravelPackagesDetailProtocol

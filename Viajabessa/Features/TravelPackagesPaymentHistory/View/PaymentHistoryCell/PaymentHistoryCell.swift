@@ -29,7 +29,7 @@ class PaymentHistoryCell: UITableViewCell {
         self.travelPackagePrice.font = UIFont.boldSystemFont(ofSize: 14)
         self.travelPackageLocation.font = UIFont.boldSystemFont(ofSize: 20)
         
-        if let data = savePayment.image as? Data {
+        if let data = savePayment.image as Data? {
             self.travelPackageimages.image = UIImage(data: data)
         }
     }

@@ -24,7 +24,7 @@ class TravelPackagesPaymentHistoryController: UITableViewController {
         
         self.presenter = TravelPackagesPaymentHistoryControllerPresenter(view: self)
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.semibold)]
         self.navigationController?.navigationBar.barTintColor = AppColor.shared.colorPrimary
         
         self.tableView.register(UINib(nibName: PaymentHistoryCell.identifier, bundle: nil), forCellReuseIdentifier: PaymentHistoryCell.identifier)
@@ -87,13 +87,13 @@ extension TravelPackagesPaymentHistoryController {
         cell.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
             
         if self.productDb?.count == 0 {
            return
         } else {
             guard let purchases = self.productDb, let dataBase = self.dataBase else { return }
-            if (editingStyle == UITableViewCellEditingStyle.delete) {
+            if (editingStyle == UITableViewCell.EditingStyle.delete) {
                 try! dataBase.write {dataBase.delete(purchases[indexPath.item])}
                 updateData()
             }
@@ -102,10 +102,7 @@ extension TravelPackagesPaymentHistoryController {
 }
 
 // MARK: - ViewProtocol
-
 extension TravelPackagesPaymentHistoryController: TravelPackagesPaymentHistoryControllerProtocol {
-    
-    
     func addRightBarButtonItems() {
         let cleanItem = UIBarButtonItem(title: "Deletar", style: .plain, target: self, action: #selector(self.cleanPurchases))
         cleanItem.tintColor = .white

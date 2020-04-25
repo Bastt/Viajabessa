@@ -34,4 +34,3 @@ class TravelPackagesCollectionCell: UICollectionViewCell {
         self.location.font = UIFont.boldSystemFont(ofSize: 18)
     }
 }
-

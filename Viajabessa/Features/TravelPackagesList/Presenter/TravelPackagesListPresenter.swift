@@ -8,6 +8,16 @@
 
 import Foundation
 
+protocol TravelPackagesListProtocol: class {
+
+    func navigationItem()
+    func tabBarItem()
+    func startLoading()
+    func stopLoading()
+    func reloadTableView()
+    func showAlertError(with title: String, message: String, buttonTitle: String)
+}
+
 final class TravelPackagesListPresenter {
 
     fileprivate unowned let view: TravelPackagesListProtocol
@@ -21,9 +31,7 @@ final class TravelPackagesListPresenter {
 }
 
 // MARK: - Public methods
-
 extension TravelPackagesListPresenter {
-    
     func loadTravelPackages() {
         self.view.startLoading()
         self.service.getTravelPackages(success: { result  in
@@ -50,9 +58,7 @@ extension TravelPackagesListPresenter {
 }
 
 // MARK: - Private methods
-
 extension TravelPackagesListPresenter {
-    
     fileprivate func requestError(errorDescription: String) {
         self.view.stopLoading()
         self.view.showAlertError(with: "Erro", message: errorDescription, buttonTitle: "OK")

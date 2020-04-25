@@ -42,7 +42,6 @@ class TravelPackagesPurchaseController: UITableViewController {
 }
 
 // MARK: - Table view data source
-
 extension TravelPackagesPurchaseController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +50,6 @@ extension TravelPackagesPurchaseController {
 }
 
 // MARK: - Action
-
 extension TravelPackagesPurchaseController {
 
     @IBAction func payment(_ sender: AnyObject) {
@@ -69,7 +67,6 @@ extension TravelPackagesPurchaseController {
 }
 
 // MARK: - ViewProtocol
-
 extension TravelPackagesPurchaseController: TravelPackagesPurchaseProtocol {
 
     func setup() {
@@ -91,7 +88,7 @@ extension TravelPackagesPurchaseController: TravelPackagesPurchaseProtocol {
         keyboardToolbar.sizeToFit()
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         
-        let doneBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "closeDown"), style: UIBarButtonItemStyle.done, target: view, action: #selector(UIView.endEditing(_:)))
+        let doneBarButton = UIBarButtonItem(image: #imageLiteral(resourceName: "closeDown"), style: UIBarButtonItem.Style.done, target: view, action: #selector(UIView.endEditing(_:)))
         
         keyboardToolbar.items = [flexBarButton, doneBarButton]
         
@@ -158,4 +155,3 @@ extension TravelPackagesPurchaseController: TravelPackagesPurchaseProtocol {
         }
     }
 }
-

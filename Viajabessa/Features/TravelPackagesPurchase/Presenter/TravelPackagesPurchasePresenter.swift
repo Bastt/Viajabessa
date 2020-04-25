@@ -10,6 +10,18 @@ import Foundation
 import RealmSwift
 import UIKit
 
+protocol TravelPackagesPurchaseProtocol: class {
+    
+    func setup()
+    func VSTextField()
+    func addDoneButton()
+    func resetField()
+    func checkFields() -> Bool
+    func tintCell()
+    func dismiss()
+    func setAttributesView()
+}
+
 final class TravelPackagesPurchasePresenter {
     
     fileprivate unowned let view: TravelPackagesPurchaseProtocol
@@ -20,7 +32,6 @@ final class TravelPackagesPurchasePresenter {
 }
 
 // MARK: - Public methods
-
 extension TravelPackagesPurchasePresenter {
 
     func setupInitializerView() {
@@ -46,7 +57,7 @@ extension TravelPackagesPurchasePresenter {
             database.daily = travelPackages.daily!
             
             if let images = imageView.image {
-                database.image = UIImagePNGRepresentation(images) as NSData?
+                database.image = images.pngData() as NSData?
             }
 
             realm.add(database)
